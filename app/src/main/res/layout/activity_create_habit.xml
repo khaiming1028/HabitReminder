@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Habit"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/etHabitTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edit"
+                android:drawableLeft="@drawable/create"
+                android:padding="10dp"
+                android:hint="Title"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/etHabitDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edit"
+                android:drawableLeft="@drawable/description"
+                android:padding="10dp"
+                android:hint="Description"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/etStartingTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edit"
+                android:drawableLeft="@drawable/time"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:hint="Select starting time"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/etEndingTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edit"
+                android:drawableLeft="@drawable/time"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:hint="Select ending time"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/btnSaveHabit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="CREATE HABIT"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/chbtnback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="BACK"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
